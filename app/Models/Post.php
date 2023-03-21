@@ -10,4 +10,9 @@ class Post extends Model
     use HasFactory;
     // protected $fillable = ['title','excerpt','body']; => hanya boleh mengisi isian yang di tuliskn, $guarded =>selain yang di tuliskan boleh diisi
     protected $guarded = ['id'];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

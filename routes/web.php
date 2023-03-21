@@ -38,3 +38,5 @@ Route::get('/about', function () {
 Route::get('/learn', [PostController::class,'index']);
 // single post
 Route::get('learn/{post:slug}', [PostController::class, 'show'] );
+
+Route::get 
