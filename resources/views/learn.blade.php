@@ -6,7 +6,7 @@
             <h2>
                 <a class="text-decoration-none" href="/learn/{{ $post->slug }}">{{ $post->title }}</a>
             </h2>
-            <p>By. <a class="text-decoration-none" href="#">{{ $post->user->name }}</a>|<a class="text-decoration-none" href="/categories/{{ $post->category->slug }}"> {{ $post->category->name }}</a></p>
+            <p>By. <a class="text-decoration-none" href="/authors/{{ $post->author->username }}">{{ $post->author->name }}</a>|<a class="text-decoration-none" href="/categories/{{ $post->category->slug }}"> {{ $post->category->name }}</a></p>
             <p>{{ $post->excerpt }}</p>
             <a class="text-decoration-none" href="/learn/{{ $post->slug }}">Read More...</a>
         @endforeach
